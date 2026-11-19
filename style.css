@@ -1,0 +1,143 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #063b20, #08783c, #04351d);
+    padding: 40px 20px;
+    color: white;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px #001b0d;
+}
+
+h1::before {
+    content: "⚽ ";
+}
+
+/* FORMULÁRIO */
+#formtime {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* CAMPOS */
+input {
+    padding: 14px;
+    border: 2px solid #16834a;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #e9bd20;
+    box-shadow: 0 0 8px rgba(233, 189, 32, 0.5);
+}
+
+/* BOTÃO */
+#btnsalvar {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e6bd22;
+    color: #12351e;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnsalvar:hover {
+    background-color: #ffda42;
+    transform: scale(1.03);
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #183c27;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* CABEÇALHO */
+thead {
+    background-color: #e6bd22;
+    color: #12351e;
+}
+
+th {
+    padding: 18px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* LINHAS */
+td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+}
+
+/* EFEITO NAS LINHAS */
+tbody tr:nth-child(even) {
+    background-color: #e9f5ec;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #c9ebd2;
+    transition: 0.2s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #formtime {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 12px 6px;
+    }
+}
